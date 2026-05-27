@@ -1,109 +1,211 @@
+# Laravel AI Chat Widget
+
+A plug-and-play AI chatbot package for Laravel powered by OpenAI.
+
+Add an intelligent AI assistant to your Laravel website with a floating chatbot widget, FAQ training, admin settings panel, lead capture, and smart responses.
+
+Perfect for agencies, SaaS products, business websites, support systems, and portfolio sites.
+
+---
+
+## ✨ Features
+
+- ✅ Floating AI Chat Widget
+- ✅ OpenAI Integration
+- ✅ FAQ-Based AI Responses
+- ✅ Admin Settings Panel
+- ✅ Chat History
+- ✅ Smart FAQ Matching
+- ✅ Lead Capture Support
+- ✅ Easy Laravel Integration
+- ✅ Lightweight & Developer Friendly
+
+---
+
+## 🚀 Installation
+
+Install the package via Composer:
+
+```bash
+composer require shaurya/laravel-ai-chat-widget
+```
+
 Run the installation command:
 
+```bash
 php artisan ai-chat:install
+```
 
-This will:
+This command will automatically:
 
-Publish configuration files
-Run database migrations
-Create default chatbot settings
-Configuration
+- Publish configuration files
+- Run database migrations
+- Create default chatbot settings
+- Prepare required assets
+
+---
+
+## 💬 Add Widget to Your Website
+
+Add the chatbot widget anywhere in your Blade file:
+
+```blade
+<x-ai-chat-widget />
+```
+
+Recommended placement:
+
+```blade
+</body>
+```
+
+Example:
+
+```blade
+<body>
+
+    @yield('content')
+
+    <x-ai-chat-widget />
+
+</body>
+```
+
+---
+
+## ⚙️ Configuration
 
 After installation, open:
 
+```text
 /admin/ai-chat/settings
+```
 
-From here you can:
+From the settings panel you can:
 
-Add your OpenAI API key
-Customize chatbot behavior
-Change welcome message
-Enable or disable chatbot
-Customize colors
-Managing FAQs
+- Add your OpenAI API key
+- Choose AI model
+- Customize chatbot behavior
+- Change welcome message
+- Enable or disable chatbot
+- Customize widget colors
+- Configure FAQ matching
+- Manage lead capture
 
-To train your chatbot, go to:
+---
 
+## 📚 Managing FAQs
+
+To train your chatbot, visit:
+
+```text
 /admin/ai-chat/faqs
+```
 
-Add questions and answers relevant to your business.
+Add questions and answers related to your business.
 
-For example:
+### Example FAQs
 
-Question	Answer
-What services do you provide?	We provide Laravel, WordPress, React.js, and custom web development services.
-Do you offer API integrations?	Yes, we integrate payment gateways, CRMs, booking APIs, and third-party systems.
+| Question | Answer |
+|-----------|--------|
+| What services do you provide? | We provide Laravel, WordPress, React.js, and custom web development services. |
+| Do you offer API integrations? | Yes, we integrate payment gateways, CRMs, booking APIs, and third-party systems. |
 
-The chatbot will automatically use these FAQs when answering visitors.
+The chatbot will automatically use FAQs to provide smarter and more relevant responses to visitors.
 
-Example Use Cases
+---
+
+## 🎯 Example Use Cases
 
 This package works well for:
 
-Agency websites
-SaaS products
-Business websites
-Support systems
-Portfolio websites
-Client service websites
-Database Tables
+- Agency Websites
+- SaaS Products
+- Business Websites
+- Customer Support Systems
+- Portfolio Websites
+- Client Service Websites
+- Landing Pages
+- Lead Generation Funnels
 
-The package creates the following tables automatically:
+---
 
+## 🗄️ Database Tables
+
+The package automatically creates the following tables:
+
+```text
 ai_chat_messages
 ai_chat_settings
 ai_chat_faqs
 ai_chat_leads
-Tech Stack
+```
+
+---
+
+## 🛠️ Tech Stack
 
 Built with:
 
-Laravel 11+
-PHP 8.2+
-OpenAI API
-MySQL
-Blade
-Vanilla JavaScript
-Roadmap
+- Laravel 11+
+- PHP 8.2+
+- OpenAI API
+- MySQL
+- Blade
+- Vanilla JavaScript
 
-Current features:
+---
 
- Floating chatbot widget
- OpenAI integration
- FAQ-based responses
- Admin settings panel
- Chat history
- Smart FAQ matching
+## 🛣️ Roadmap
 
-Planned features:
+### Current Features
 
- Better modern UI
- Typing animation
- PDF training
- Dark mode
- Multi-language support
- WhatsApp integration
- Analytics dashboard
-Contributing
+- [x] Floating chatbot widget
+- [x] OpenAI integration
+- [x] FAQ-based responses
+- [x] Admin settings panel
+- [x] Chat history
+- [x] Smart FAQ matching
+
+### Upcoming Features
+
+- [ ] Modern enhanced UI
+- [ ] Typing animation
+- [ ] PDF training support
+- [ ] Dark mode
+- [ ] Multi-language support
+- [ ] WhatsApp integration
+- [ ] Analytics dashboard
+- [ ] Conversation export
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome.
 
-If you find bugs, have feature ideas, or want to improve the package, feel free to open an issue or submit a pull request.
+If you'd like to improve the package, fix bugs, or suggest features, feel free to open an issue or submit a pull request.
 
-Support
+---
 
-If this package helped you, consider giving it a ⭐ on GitHub.
+## ⭐ Support
+
+If this package helped you, please consider giving it a star on GitHub.
 
 It helps the project grow and motivates future improvements.
 
-License
+---
 
-This package is open-source and licensed under the MIT License.
+## 📄 License
 
-Author
+This package is open-source software licensed under the **MIT License**.
 
-Shaurya
+---
+
+## 👨‍💻 Author
+
+**Shaurya**
 
 Laravel Developer • WordPress Expert • AI Integrations
 
-Feel free to connect or contribute to the project.
+Feel free to contribute, connect, or suggest improvements.
