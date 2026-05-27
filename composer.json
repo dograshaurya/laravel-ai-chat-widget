@@ -1,0 +1,24 @@
+{
+    "name": "shaurya/laravel-ai-chat-widget",
+    "description": "Laravel AI Chat Widget Package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shaurya\\LaravelAiChatWidget\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shaurya\\LaravelAiChatWidget\\LaravelAiChatWidgetServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
